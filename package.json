@@ -1,0 +1,20 @@
+{
+  "name": "max-first-bday",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Swolebrain/max-first-bday.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Swolebrain/max-first-bday/issues"
+  },
+  "homepage": "https://github.com/Swolebrain/max-first-bday#readme",
+  "keywords": [],
+  "description": ""
+}

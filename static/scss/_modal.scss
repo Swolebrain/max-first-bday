@@ -1,0 +1,102 @@
+@keyframes spideyswing{
+  90%{
+    opacity:1;
+  }
+  100%{
+    transform: rotate(135deg);
+    opacity:0;
+  }
+}
+.spidey-animate{
+  animation-name: spideyswing;
+  animation-duration: 3.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+#modal{
+  position: fixed;
+  top:0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.3);
+  // display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display:none;
+
+  .spidey{
+    position:absolute;
+    top: 0;
+    left:30%;
+    max-width: 350px;
+    transform-origin: top;
+    transform: rotate(-135deg);
+
+  }
+  .web{
+    position: fixed;
+    top: 50%;
+    left: 50vw;
+    width: 100%;
+    max-width: 800px;
+    transition: transform 600ms;
+    transition-timing-function: ease-in;
+    transform-origin: center;
+    transform: translate(-400px, -300px) scale(0.001,0.01) ;
+  }
+  .growth-animation{
+    transform: scale(1,1) !important;
+  }
+  .web.growth-animation{
+    transform: scale(1,1) translate(-50%, -50%) !important;
+  }
+  #form{
+    padding: 4rem 0;
+    background-color: rgba(0,0,0,0.65);
+    display: flex;
+    max-width: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0,0);
+    transition: transform 1s ease-in-out;
+    input{
+      font-family: Limelight;
+      color: #20202f;
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+    }
+    h3{
+      display: flex;
+      align-self: stretch;
+      justify-content: space-around;
+    }
+    input[type="number"]{
+      width: 3rem;
+    }
+    .buttons{
+      display: flex;
+      align-self: stretch;
+      justify-content: space-around;
+      button{
+        flex:1;
+        font-family: Limelight;
+        color: #20202f;
+        font-size: 1.25rem;
+        padding: 0.5rem;
+        transition: all 1s linear, background-color 1s linear;
+        &:nth-child(2){
+          margin: 0 0.5rem;
+        }
+        &:hover{
+          background-color: #20202f;
+          color: white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@keyframes thor{
+  0%{
+    transform: translateX(-450px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+@keyframes hulk{
+  0%{
+    transform: translateY(-1200px);
+  }
+  50%{
+    transform: translateY(0);
+  }
+  70%{
+    transform: scale(1.35);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+@keyframes ironman{
+  0%{
+    transform: translateY(400%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+@keyframes captainamerica{
+  0%{
+    transform: translateX(450px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+.superhero-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img{
+    max-width: 25%;
+    box-sizing: border-box;
+    display:flex;
+  }
+}
+#thor{
+  animation: thor 1s ease-in;
+}
+#hulk{
+  animation: hulk 2s ease-in;
+}
+#ironman{
+  animation: ironman 1.2s ease-in-out;
+}
+#captainamerica{
+  animation: captainamerica 1.2s ease-in-out;
+}
