@@ -179,5 +179,11 @@ h4 {
         #modal #form .buttons button:hover {
           background-color: #20202f;
           color: white; }
+    #modal #form .guest-name {
+      margin-bottom: 0; }
+    #modal #form .subtext {
+      margin: 0;
+      text-align: right;
+      align-self: stretch; }
 
 /*# sourceMappingURL=style.css.map */
