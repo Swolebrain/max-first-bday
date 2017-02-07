@@ -71,15 +71,21 @@ var viewGuestsBtn = document.getElementById('view-guests-btn');
 viewGuestsBtn.onclick = viewGuestsHandler;
 function viewGuestsHandler(e){
   sendRequest('/guests', 'GET', null, function(res){
+    var totalChildren = 0;
+    var totalAdults = 0;
     var appendStr = '';
     res.forEach(function(guest){
+      if (!guest.attending) return;
       if (!guest.numAdults) guest.numAdults = 0;
       if (!guest.numChildren) guest.numChildren = 0;
+      totalChildren += guest.numChildren;
+      totalAdults += guest.numAdults;
       appendStr += `
         <h3 class='guest-name'>${guest.name}</h3>
         <h4 class="subtext">${guest.numAdults} adults, ${guest.numChildren} children</h4>
       `
     });
+    appendStr = `<h3>${totalChildren} children and ${totalAdults} adults attending</h3>` + appendStr;
     form.innerHTML = appendStr;
   });
 }
