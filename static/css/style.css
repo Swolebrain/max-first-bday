@@ -169,16 +169,16 @@ h4 {
     #modal #form .buttons {
       display: flex;
       align-self: stretch;
-      justify-content: space-around; }
+      justify-content: center;
+      flex-wrap: wrap; }
       #modal #form .buttons button {
         flex: 1;
         font-family: Limelight;
         color: #20202f;
         font-size: 1.25rem;
         padding: 0.5rem;
-        transition: all 1s linear, background-color 1s linear; }
-        #modal #form .buttons button:nth-child(2) {
-          margin: 0 0.5rem; }
+        transition: all 1s linear, background-color 1s linear;
+        margin: 0.5rem; }
         #modal #form .buttons button:hover {
           background-color: #20202f;
           color: white; }
@@ -192,13 +192,6 @@ h4 {
     #modal .web {
       transform: translate(-50%, -100px) scale(0.001, 0.01); }
     #modal .smaller {
-      font-size: 1.25rem; }
-    #modal #form .buttons {
-      flex-direction: column; }
-    #modal #form .buttons button {
-      margin-bottom: 1rem;
-      align-self: stretch;
-      margin-left: 2rem;
-      margin-right: 2rem; } }
+      font-size: 1.25rem; } }
 
 /*# sourceMappingURL=style.css.map */

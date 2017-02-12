@@ -5,7 +5,8 @@
   "scripts": {
     "sass": "sass --watch static/scss:static/css",
     "start": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "shove": "git add . && git commit -m \"rush commit, fixing stuff\" && git push origin master"
   },
   "repository": {
     "type": "git",
