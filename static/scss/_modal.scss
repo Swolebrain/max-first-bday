@@ -48,11 +48,7 @@
     transform-origin: center;
     transform: translate(-50%, -300px) scale(0.001,0.01);
   }
-  @media screen and (max-width: 768px){
-    .web {
-      transform: translate(-50%, -100px) scale(0.001,0.01);
-    }
-  }
+
   .growth-animation{
     transform: scale(1,1) !important;
   }
@@ -112,6 +108,23 @@
       margin: 0;
       text-align: right;
       align-self: stretch;
+    }
+  }
+  @media screen and (max-width: 768px){
+    .web {
+      transform: translate(-50%, -100px) scale(0.001,0.01);
+    }
+    .smaller{
+      font-size: 1.25rem;
+    }
+    #form .buttons{
+      flex-direction: column;
+    }
+    #form .buttons button{
+      margin-bottom:1rem;
+      align-self: stretch;
+      margin-left:2rem;
+      margin-right:2rem;
     }
   }
 }

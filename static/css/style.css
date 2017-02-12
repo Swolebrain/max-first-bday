@@ -138,9 +138,6 @@ h4 {
     transition-timing-function: ease-in;
     transform-origin: center;
     transform: translate(-50%, -300px) scale(0.001, 0.01); }
-  @media screen and (max-width: 768px) {
-    #modal .web {
-      transform: translate(-50%, -100px) scale(0.001, 0.01); } }
   #modal .growth-animation {
     transform: scale(1, 1) !important; }
   #modal .web.growth-animation {
@@ -191,5 +188,17 @@ h4 {
       margin: 0;
       text-align: right;
       align-self: stretch; }
+  @media screen and (max-width: 768px) {
+    #modal .web {
+      transform: translate(-50%, -100px) scale(0.001, 0.01); }
+    #modal .smaller {
+      font-size: 1.25rem; }
+    #modal #form .buttons {
+      flex-direction: column; }
+    #modal #form .buttons button {
+      margin-bottom: 1rem;
+      align-self: stretch;
+      margin-left: 2rem;
+      margin-right: 2rem; } }
 
 /*# sourceMappingURL=style.css.map */
