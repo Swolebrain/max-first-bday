@@ -72,12 +72,11 @@ function viewGuestsHandler(e){
       if (!guest.numChildren) guest.numChildren = 0;
       totalChildren += guest.numChildren;
       totalAdults += guest.numAdults;
-      appendStr += `
-        <h3 class='guest-name'>${guest.name}</h3>
-        <h4 class="subtext">${guest.numAdults} adults, ${guest.numChildren} children</h4>
-      `
+      appendStr += "<h3 class='guest-name'>" + guest.name +"</h3>" +
+        "<h4 class='subtext'>" + guest.numAdults + " adults, " + guest.numChildren + " children</h4>"
+
     });
-    appendStr = `<h3>${totalChildren} children and ${totalAdults} adults attending</h3>` + appendStr;
+    appendStr = "<h3>" + totalChildren + " children and " + totalAdults + " adults attending</h3> "+ appendStr;
     form.innerHTML = appendStr;
   });
 }
