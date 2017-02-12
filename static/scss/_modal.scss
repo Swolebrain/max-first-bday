@@ -86,7 +86,7 @@
       align-self: stretch;
       justify-content: center;
       flex-wrap: wrap;
-      button{
+      .button{
         flex:1;
         font-family: Limelight;
         color: #20202f;
@@ -95,8 +95,11 @@
         transition: all 1s linear, background-color 1s linear;
         margin: 0.5rem;
         min-width: 200px;
+        background: #c6c6c6;
+        background: linear-gradient(to bottom, #c6c6c6 0%,#d8d8d8 100%);
         &:hover{
           background-color: #20202f;
+          background: linear-gradient(to bottom, #40404f 0%, #20202f; 100%);
           color: white;
         }
       }
