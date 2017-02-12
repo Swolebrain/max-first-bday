@@ -94,6 +94,7 @@
         padding: 0.5rem;
         transition: all 1s linear, background-color 1s linear;
         margin: 0.5rem;
+        min-width: 200px;
         &:hover{
           background-color: #20202f;
           color: white;
