@@ -24,6 +24,7 @@
   background-color: rgba(0,0,0,0.3);
   // display: flex;
   flex-direction: column;
+  -webkit-flex-direction: wrap;
   justify-content: center;
   align-items: center;
   display:none;
@@ -56,15 +57,30 @@
     transform: scale(1,1) translate(-50%, -50%) !important;
   }
   #form{
+    padding: 64px 0;
     padding: 4rem 0;
     background-color: rgba(0,0,0,0.65);
     display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     max-width: 500px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transform: scale(0,0);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -webkit-flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -webkit-transform: scale(0,0);
+        transform: scale(0,0);
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
     transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
     input{
       font-family: Limelight;
       color: #20202f;
@@ -74,8 +90,12 @@
     input[type=number]::-webkit-outer-spin-button { margin: 0; }
     h3{
       display: flex;
-      align-self: stretch;
-      justify-content: space-around;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
     }
     input[type="number"]{
       width: 3rem;
@@ -83,19 +103,35 @@
     }
     .buttons{
       display: flex;
-      align-self: stretch;
-      justify-content: center;
-      flex-wrap: wrap;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+        -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      text-align:center;
       .button{
-        flex:1;
+        display: inline-block;
         font-family: Limelight;
         color: #20202f;
+        font-size: 20px;
         font-size: 1.25rem;
+        padding: 8px;
         padding: 0.5rem;
+        -webkit-transition: all 1s linear, background-color 1s linear;
         transition: all 1s linear, background-color 1s linear;
+        margin: 8px;
         margin: 0.5rem;
         min-width: 200px;
         background: #c6c6c6;
+        background: -webkit-linear-gradient(top, #c6c6c6 0%,#d8d8d8 100%);
         background: linear-gradient(to bottom, #c6c6c6 0%,#d8d8d8 100%);
         &:hover{
           background-color: #20202f;

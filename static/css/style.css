@@ -118,6 +118,7 @@ h4 {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.3);
   flex-direction: column;
+  -webkit-flex-direction: wrap;
   justify-content: center;
   align-items: center;
   display: none; }
@@ -143,15 +144,30 @@ h4 {
   #modal .web.growth-animation {
     transform: scale(1, 1) translate(-50%, -50%) !important; }
   #modal #form {
+    padding: 64px 0;
     padding: 4rem 0;
     background-color: rgba(0, 0, 0, 0.65);
     display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     max-width: 500px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-transform: scale(0, 0);
     transform: scale(0, 0);
-    transition: transform 1s ease-in-out; }
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out; }
     #modal #form input {
       font-family: Limelight;
       color: #20202f;
@@ -161,26 +177,46 @@ h4 {
       margin: 0; }
     #modal #form h3 {
       display: flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      -ms-flex-item-align: stretch;
       align-self: stretch;
+      -ms-flex-pack: distribute;
       justify-content: space-around; }
     #modal #form input[type="number"] {
       width: 3rem;
       height: 3rem; }
     #modal #form .buttons {
       display: flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      -ms-flex-item-align: stretch;
       align-self: stretch;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
-      flex-wrap: wrap; }
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -ms-grid-row-align: center;
+      align-items: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      text-align: center; }
       #modal #form .buttons .button {
-        flex: 1;
+        display: inline-block;
         font-family: Limelight;
         color: #20202f;
+        font-size: 20px;
         font-size: 1.25rem;
+        padding: 8px;
         padding: 0.5rem;
+        -webkit-transition: all 1s linear, background-color 1s linear;
         transition: all 1s linear, background-color 1s linear;
+        margin: 8px;
         margin: 0.5rem;
         min-width: 200px;
         background: #c6c6c6;
+        background: -webkit-linear-gradient(top, #c6c6c6 0%, #d8d8d8 100%);
         background: linear-gradient(to bottom, #c6c6c6 0%, #d8d8d8 100%); }
         #modal #form .buttons .button:hover {
           background-color: #20202f;
