@@ -32,10 +32,6 @@ function declineHandler(e){
   declineBtn.onclick = null;
   //send request to decline
   sendRequest('/rsvp', 'POST', {name: nameField.value, attending: false }, function(res){
-    if (res.status != 200){
-      alert("Whoops, there was a problem! Please refresh the page and try again");
-      return;
-    }
     displayFeedback("We'll miss you!");
   });
 }
@@ -59,11 +55,7 @@ function rsvpHandler(e){
     numAdults: Number(numAdults.value),
     attending: true
   }, function(res){
-    if (res.status != 200){
-      alert("Whoops, there was a problem! Please refresh the page and try again");
-      return;
-    }
-    displayFeedback("Thanks! We'll have fun!");
+      displayFeedback("Thanks! We'll have fun!");
   });
 }
 

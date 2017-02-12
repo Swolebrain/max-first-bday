@@ -137,7 +137,10 @@ h4 {
     transition: transform 600ms;
     transition-timing-function: ease-in;
     transform-origin: center;
-    transform: translate(-400px, -300px) scale(0.001, 0.01); }
+    transform: translate(-50%, -300px) scale(0.001, 0.01); }
+  @media screen and (max-width: 768px) {
+    #modal .web {
+      transform: translate(-50%, -100px) scale(0.001, 0.01); } }
   #modal .growth-animation {
     transform: scale(1, 1) !important; }
   #modal .web.growth-animation {

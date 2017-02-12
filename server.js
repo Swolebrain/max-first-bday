@@ -13,7 +13,7 @@ db.once('open', function() {
 
 var guestSchema = mongoose.Schema({
   name: String,
-  numchildren: Number,
+  numChildren: Number,
   numAdults: Number,
   attending: Boolean
 });
