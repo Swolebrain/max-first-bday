@@ -95,7 +95,8 @@ h4 {
     transform: translate(0, -50%);
     top: 46%;
     width: 100%;
-    color: red; }
+    color: red;
+    left: 0; }
 
 @keyframes spideyswing {
   90% {
