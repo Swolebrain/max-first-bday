@@ -1,113 +1,201 @@
-/*
-Error: Invalid CSS after "...04f 0%, #20202f": expected ")", was "; 100%);"
-        on line 102 of static/scss/_modal.scss
-        from line 42 of static/scss/style.scss
+body {
+  background-image: url("../assets/img/chalkboard_small_tiled2.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1; }
 
-97:         min-width: 200px;
-98:         background: #c6c6c6;
-99:         background: linear-gradient(to bottom, #c6c6c6 0%,#d8d8d8 100%);
-100:         &:hover{
-101:           background-color: #20202f;
-102:           background: linear-gradient(to bottom, #40404f 0%, #20202f; 100%);
-103:           color: white;
-104:         }
-105:       }
-106:     }
-107:     .guest-name{
+h2 {
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
+  font-family: 'Walter Turncoat', Verdana;
+  font-size: 2.5rem;
+  margin: 0;
+  text-align: center; }
 
-Backtrace:
-static/scss/_modal.scss:102
-static/scss/style.scss:42
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/lexer.rb:229:in `expected!'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/parser.rb:717:in `assert_tok'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/parser.rb:541:in `funcall'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/parser.rb:520:in `ident'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/parser.rb:309:in `unary_not'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/parser.rb:309:in `unary_div'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/parser.rb:309:in `unary_minus'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/parser.rb:309:in `unary_plus'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/parser.rb:286:in `times_div_or_mod'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/parser.rb:286:in `plus_or_minus'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/parser.rb:286:in `relational'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/parser.rb:286:in `eq_or_neq'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/parser.rb:286:in `and_expr'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/parser.rb:286:in `or_expr'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/parser.rb:494:in `space'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/parser.rb:434:in `interpolation'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/parser.rb:359:in `expr'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/parser.rb:708:in `assert_expr'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/parser.rb:75:in `parse'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1063:in `sass_script'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:909:in `value!'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:778:in `block in try_declaration'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1183:in `rethrow'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:791:in `try_declaration'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:720:in `declaration_or_ruleset'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:685:in `block_child'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:666:in `block'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:685:in `block_child'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:666:in `block'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:685:in `block_child'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:666:in `block'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:685:in `block_child'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:666:in `block'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:685:in `block_child'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:666:in `block'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:658:in `ruleset'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:312:in `to_tree'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:331:in `block in watch'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...04f 0%, #20202f\": expected \")\", was \"; 100%);\"\A         on line 102 of static/scss/_modal.scss\A         from line 42 of static/scss/style.scss\A \A 97:         min-width: 200px;\A 98:         background: #c6c6c6;\A 99:         background: linear-gradient(to bottom, #c6c6c6 0%,#d8d8d8 100%);\A 100:         &:hover{\A 101:           background-color: #20202f;\A 102:           background: linear-gradient(to bottom, #40404f 0%, #20202f; 100%);\A 103:           color: white;\A 104:         }\A 105:       }\A 106:     }\A 107:     .guest-name{"; }
+.centered {
+  text-align: center;
+  max-width: 100%; }
+
+.maximg {
+  width: 80%;
+  max-width: 600px; }
+
+h3 {
+  font-family: Limelight;
+  color: white;
+  font-size: 1.75rem;
+  text-align: center; }
+
+h4 {
+  font-family: Limelight;
+  text-align: center;
+  color: #ffdd11; }
+
+@keyframes thor {
+  0% {
+    transform: translateX(-450px); }
+  100% {
+    transform: translateX(0); } }
+@keyframes hulk {
+  0% {
+    transform: translateY(-1200px); }
+  50% {
+    transform: translateY(0); }
+  70% {
+    transform: scale(1.35); }
+  100% {
+    transform: scale(1); } }
+@keyframes ironman {
+  0% {
+    transform: translateY(400%); }
+  100% {
+    transform: translateY(0); } }
+@keyframes captainamerica {
+  0% {
+    transform: translateX(450px); }
+  100% {
+    transform: translateX(0); } }
+.superhero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .superhero-container img {
+    max-width: 25%;
+    box-sizing: border-box;
+    display: flex; }
+
+#thor {
+  animation: thor 1s ease-in; }
+
+#hulk {
+  animation: hulk 2s ease-in; }
+
+#ironman {
+  animation: ironman 1.2s ease-in-out; }
+
+#captainamerica {
+  animation: captainamerica 1.2s ease-in-out; }
+
+.rsvp-now {
+  width: 100%;
+  max-width: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: transform 300ms ease-in; }
+  .rsvp-now:hover {
+    transform: scale(1.16, 1.16); }
+  .rsvp-now h1 {
+    font-family: 'Fontdiner Swanky';
+    text-align: center;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 46%;
+    width: 100%;
+    color: red; }
+
+@keyframes spideyswing {
+  90% {
+    opacity: 1; }
+  100% {
+    transform: rotate(135deg);
+    opacity: 0; } }
+.spidey-animate {
+  animation-name: spideyswing;
+  animation-duration: 3.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards; }
+
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none; }
+  #modal .spidey {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    max-width: 350px;
+    transform-origin: top;
+    transform: rotate(-135deg); }
+  #modal .web {
+    position: fixed;
+    top: 50%;
+    left: 50vw;
+    width: 100%;
+    max-width: 800px;
+    transition: transform 600ms;
+    transition-timing-function: ease-in;
+    transform-origin: center;
+    transform: translate(-50%, -300px) scale(0.001, 0.01); }
+  #modal .growth-animation {
+    transform: scale(1, 1) !important; }
+  #modal .web.growth-animation {
+    transform: scale(1, 1) translate(-50%, -50%) !important; }
+  #modal #form {
+    padding: 4rem 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    display: flex;
+    max-width: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0, 0);
+    transition: transform 1s ease-in-out; }
+    #modal #form input {
+      font-family: Limelight;
+      color: #20202f;
+      font-size: 1.5rem;
+      line-height: 1.5rem; }
+    #modal #form input[type=number]::-webkit-outer-spin-button {
+      margin: 0; }
+    #modal #form h3 {
+      display: flex;
+      align-self: stretch;
+      justify-content: space-around; }
+    #modal #form input[type="number"] {
+      width: 3rem;
+      height: 3rem; }
+    #modal #form .buttons {
+      display: flex;
+      align-self: stretch;
+      justify-content: center;
+      flex-wrap: wrap; }
+      #modal #form .buttons .button {
+        flex: 1;
+        font-family: Limelight;
+        color: #20202f;
+        font-size: 1.25rem;
+        padding: 0.5rem;
+        transition: all 1s linear, background-color 1s linear;
+        margin: 0.5rem;
+        min-width: 200px;
+        background: #c6c6c6;
+        background: linear-gradient(to bottom, #c6c6c6 0%, #d8d8d8 100%); }
+        #modal #form .buttons .button:hover {
+          background-color: #20202f;
+          background: linear-gradient(to bottom, #40404f 0%, #20202f 100%);
+          color: white; }
+    #modal #form .guest-name {
+      margin-bottom: 0; }
+    #modal #form .subtext {
+      margin: 0;
+      text-align: right;
+      align-self: stretch; }
+  @media screen and (max-width: 768px) {
+    #modal .web {
+      transform: translate(-50%, -100px) scale(0.001, 0.01); }
+    #modal .smaller {
+      font-size: 1.25rem; } }
+
+/*# sourceMappingURL=style.css.map */
