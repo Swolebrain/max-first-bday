@@ -160,12 +160,15 @@ h4 {
       color: #20202f;
       font-size: 1.5rem;
       line-height: 1.5rem; }
+    #modal #form input[type=number]::-webkit-outer-spin-button {
+      margin: 0; }
     #modal #form h3 {
       display: flex;
       align-self: stretch;
       justify-content: space-around; }
     #modal #form input[type="number"] {
-      width: 3rem; }
+      width: 3rem;
+      height: 3rem; }
     #modal #form .buttons {
       display: flex;
       align-self: stretch;
