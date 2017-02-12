@@ -231,6 +231,7 @@ h4 {
     #modal .web {
       transform: translate(-50%, -100px) scale(0.001, 0.01); }
     #modal .smaller {
-      font-size: 1.25rem; } }
+      font-size: 1.25rem;
+      margin: 0.2rem 0; } }
 
 /*# sourceMappingURL=style.css.map */
