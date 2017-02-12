@@ -15,6 +15,13 @@ btn.addEventListener('click', function(e){
   },2000);
 });
 
+window.onload = function(){
+  var ua = navigator.userAgent.toLowerCase();
+  if (ua.indexOf("iphone") != -1 && ( ua.indexOf("os 8") != -1 ||  ua.indexOf("os 7") != -1) ){
+    alert("Sorry, this web browser is too old and doesnt support this site. Use a computer. Sorry again!");
+  }
+}
+
 /*
   #####FORM#############################
 */

@@ -92,7 +92,7 @@ h4 {
     font-family: 'Fontdiner Swanky';
     text-align: center;
     position: absolute;
-    transform: translateY(-50%);
+    transform: translate(0 -50%);
     top: 46%;
     width: 100%;
     color: red; }
@@ -229,7 +229,8 @@ h4 {
       align-self: stretch; }
   @media screen and (max-width: 768px) {
     #modal .web {
-      transform: translate(-50%, -100px) scale(0.001, 0.01); }
+      transform: translate(-50%, -100px) scale(0.001, 0.01);
+      -webkit-transform: translate(-50%, -100px) scale(0.001, 0.01); }
     #modal .smaller {
       font-size: 1.25rem;
       margin: 0.2rem 0; } }

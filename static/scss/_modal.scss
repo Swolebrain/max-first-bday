@@ -152,6 +152,7 @@
   @media screen and (max-width: 768px){
     .web {
       transform: translate(-50%, -100px) scale(0.001,0.01);
+      -webkit-transform: translate(-50%, -100px) scale(0.001,0.01);
     }
     .smaller{
       font-size: 1.25rem;
