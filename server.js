@@ -24,9 +24,11 @@ app.use(bodyParser.json());
 app.use(express.static('static'))
 
 app.post('/rsvp', function(req,res){
-  if (!req.body || !req.body.name || (!req.body.numChildren && !req.body.numAdults) ){
+  if (!req.body || !req.body.name ){
     return res.sendStatus(400);
   }
+  if (!req.body.numChildren ) req.body.numChildren = 0;
+  if (!req.body.numAdults) req.body.numAdults = 0;
   new Guest(req.body).save()
     .then(dbRes=>res.json(dbRes))
     .catch(err=>res.status(500).send(JSON.stringify(err)));

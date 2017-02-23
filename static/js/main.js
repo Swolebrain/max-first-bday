@@ -20,6 +20,14 @@ window.onload = function(){
   if (ua.indexOf("iphone") != -1 && ( ua.indexOf("os 8") != -1 ||  ua.indexOf("os 7") != -1) ){
     alert("Sorry, this web browser is too old and doesnt support this site. Use a computer. Sorry again!");
   }
+  var thor = document.getElementById('thor');
+  var hulk = document.getElementById("hulk");
+  var ironman = document.getElementById('ironman');
+  var captainamerica = document.getElementById('captainamerica');
+  thor.classList.add('animated-thor');
+  hulk.classList.add('animated-hulk');
+  ironman.classList.add('animated-ironman');
+  captainamerica.classList.add('animated-captainamerica');
 }
 
 /*
@@ -73,8 +81,12 @@ function viewGuestsHandler(e){
     var totalChildren = 0;
     var totalAdults = 0;
     var appendStr = '';
+    var notAttendingStr = '<h3>Not attending:</h3>';
     res.forEach(function(guest){
-      if (!guest.attending) return;
+      if (!guest.attending) {
+        notAttendingStr += "<h4 class='not-attending'>"+guest.name+"</h4>";
+        return;
+      }
       if (!guest.numAdults) guest.numAdults = 0;
       if (!guest.numChildren) guest.numChildren = 0;
       totalChildren += guest.numChildren;
@@ -84,7 +96,7 @@ function viewGuestsHandler(e){
 
     });
     appendStr = "<h3>" + totalChildren + " children and " + totalAdults + " adults attending</h3> "+ appendStr;
-    form.innerHTML = appendStr;
+    form.innerHTML = appendStr+notAttendingStr;
   });
 }
 
